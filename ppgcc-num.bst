@@ -1,4 +1,3 @@
-%% $Id$
 %% This is file `ppgcc-num.bst',
 %% generated with the docstrip utility.
 %%
@@ -6,7 +5,7 @@
 %%
 %% merlin.mbs  (with options: `babel,lang,annote,nm-rev,ed-rev,aunm-semi,yr-com,tit-qq,qx,thtit-a,vnum-b,volp-com,jwdpg,pp-last,jwdvol,num-xser,ser-vol,btit-rm,bt-rm,pg-bk,add-pub,pub-date,pub-xpar,edpar,bkedcap,blk-tit,in-col,pp,abr,mth-bare,xedn,varand,and-com,and-com-ed,xand,etal-xc,revdata,eprint,url,url-blk,em-it,nfss,')
 %% ----------------------------------------
-%% *** Formato PPGCC-PUCRS 2009, Copyright (C) 2012 por Ricardo Piccoli (rfbpiccoli at gmail.com), 10/04/2012 ***
+%% *** Formato PPGCC-PUCRS 2009, Copyright (C) 2012 por Ricardo Piccoli (rfbpiccoli at gmail.com) ***
 %%
 %% Copyright 1994-2011 Patrick W Daly
  % ===============================================================
