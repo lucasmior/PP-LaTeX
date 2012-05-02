@@ -1,0 +1,8 @@
+* text=auto
+*.sh ident
+*.tex ident
+*.bib ident
+*.bst ident
+*.cls ident
+makefile ident
+README ident
