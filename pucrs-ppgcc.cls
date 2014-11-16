@@ -163,6 +163,13 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 \renewcommand{\eqref}[1]{\protect\NoCaseChange{\PP@eqref{#1}}}
 
 %----------------------------------------------------------------------------------
+% Define variável para selecionar entre o formato de sumário sem indentação e tudo
+% em maiúsculo e a opção orignal com indentiação. Ambas são aceitas pelo PPGCC.
+%----------------------------------------------------------------------------------
+\newif\if@uppercasetoc
+\@uppercasetocfalse
+
+%----------------------------------------------------------------------------------
 % Faz um retângulo em volta da caixa #1 com \PP@boxsep de margem, para
 % depuração. Evitei o \framebox{} pois desconheço qualquer possível
 % efeito colateral do mesmo.
@@ -957,8 +964,10 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 % Redefinindo comando para formatar seções no sumário,
 % sem indentação.
 %----------------------------------------------------------------------------------
+\if@uppercasetoc
 \renewcommand*\l@section{\@dottedtocline{1}{0em}{3.2em}}
 \renewcommand*\l@subsection{\@dottedtocline{2}{0em}{3.2em}}
+\fi
 
 %----------------------------------------------------------------------------------
 % Redefinindo comando para formatar figuras, algoritmos e tabelas no sumário.
@@ -998,7 +1007,11 @@ e-mail <rfbpiccoli at gmail dot com>^^J
       \fi
 %      #7}%
       % Aqui
-      \MakeTextUppercase{#7}}%
+      \if@uppercasetoc
+        \MakeTextUppercase{#7}%
+      \else
+        #7%
+      \fi}
   \else
     \def\@svsechd{%
       #6{\hskip #3\relax
@@ -1010,7 +1023,12 @@ e-mail <rfbpiccoli at gmail dot com>^^J
         \fi
 %        #7}}%
         % Aqui
-        \MakeTextUppercase{#7}}}%
+        \if@uppercasetoc
+          \MakeTextUppercase{#7}%
+        \else
+          #7%
+        \fi
+        }}%
   \fi
   \@xsect{#5}}
 
