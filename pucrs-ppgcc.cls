@@ -737,7 +737,7 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 %
 % \sigla{DDS}{Definição da Sigla}
 %----------------------------------------------------------------------------------
-\newcommand{\sigla}[2]{\addcontentsline{los}{acronym}{\MakeTextUppercase{#1}\nobreakspace--\nobreakspace #2}}
+\newcommand{\sigla}[2]{\addcontentsline{los}{acronym}{#1\nobreakspace--\nobreakspace #2}}
 \newcommand*{\l@acronym}[2]{%
  \vskip \z@ \@plus.2\p@
  {\leftskip 1.5em
